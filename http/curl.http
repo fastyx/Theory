@@ -1,4 +1,15 @@
+# --request ~ -X
+# --header ~ -H
+# --data ~ -D
 
+### GET request ###
+curl -X GET  http://localhost:3000/
 
-// Call GET Method
-http://localhost:3000/
+### POST request ###
+curl --request POST http://localhost:3000/post 
+   --header 'Content-Type: application/json'
+   --data  '{
+    "login": "sergey",
+    "password": "password"
+        }'
+
